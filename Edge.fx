@@ -8,11 +8,11 @@ float Shadowdisable : CONTROLOBJECT < string name = "PixelStyleController.pmx"; 
 static float ShadowCol = 0.2 * EdgeShadowColor;
 static float EdgeScale = 0.2*(1+PixelScaleplus)-PixelScaleminus*0.1;
 
-
 float4x4 WorldViewProjMatrix      : WORLDVIEWPROJECTION;
 float4x4 WorldMatrix              : WORLD;
 float4x4 ViewMatrix               : VIEW;
 float4x4 LightWorldViewProjMatrix : WORLDVIEWPROJECTION < string Object = "Light"; >;
+
 
 float3   LightDirection    : DIRECTION < string Object = "Light"; >;
 float3   CameraPosition    : POSITION  < string Object = "Camera"; >;
